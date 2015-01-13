@@ -4,7 +4,7 @@
 
   <groupId>pl.najda</groupId>
   <artifactId>dw-archetype</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>Dropwizard 0.6 archetype</name>
@@ -20,6 +20,17 @@ Archetype for building an initial structure of directories and files for Dropwiz
             <url>http://www.gnu.org/licenses/gpl.html</url>
         </license>
     </licenses>
+
+  <developers>
+      <developer>
+        <id>patnaj</id>
+        <name>Patryk Najda</name>
+        <roles>
+          <role>developer</role>
+        </roles>
+        <timezone>+1</timezone>
+      </developer>
+    </developers>
 
   <scm>
     <url>https://github.com/patrox/dw-archetype</url>
