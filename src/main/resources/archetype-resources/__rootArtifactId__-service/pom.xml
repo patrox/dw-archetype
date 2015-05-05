@@ -12,13 +12,12 @@
     <packaging>jar</packaging>
 
     <name>${artifactId}</name>
-    <url>http://maven.apache.org</url>
 
     <dependencies>
         <dependency>
-            <groupId>com.yammer.dropwizard</groupId>
+            <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
-            <version>0.6.2</version>
+            <version>0.8.1</version>
         </dependency>
         <dependency>
             <groupId>${groupId}</groupId>
@@ -32,7 +31,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>1.6</version>
                 <configuration>
                     <createDependencyReducedPom>true</createDependencyReducedPom>
                     <filters>
