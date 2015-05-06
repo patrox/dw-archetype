@@ -12,6 +12,5 @@
   <packaging>jar</packaging>
 
   <name>${artifactId}</name>
-  <url>http://maven.apache.org</url>
-  
+
 </project>

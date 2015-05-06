@@ -3,15 +3,16 @@
 #set( $symbol_escape = '\' )
 package ${package}.${rootArtifactId}.resource;
 
-import com.google.common.base.Optional;
-import com.yammer.metrics.annotation.Timed;
-import java.util.concurrent.atomic.AtomicLong;
+import com.codahale.metrics.annotation.Timed;
+import ${package}.${rootArtifactId}.model.Saying;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-import ${package}.${rootArtifactId}.model.Saying;
+import com.google.common.base.Optional;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  *
@@ -29,7 +30,7 @@ public class HelloWorldResource {
         this.defaultName = defaultName;
         this.counter = new AtomicLong();
     }
-    
+
     @GET
     @Timed
     public Saying sayHello(@QueryParam("name") Optional<String> name) {
@@ -37,3 +38,4 @@ public class HelloWorldResource {
                 String.format(template, name.or(defaultName)));
     }
 }
+

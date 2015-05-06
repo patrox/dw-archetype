@@ -4,10 +4,10 @@
 
   <groupId>pl.najda</groupId>
   <artifactId>dw-archetype</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>Dropwizard 0.6 archetype</name>
+  <name>Dropwizard 0.8 archetype</name>
   <description>
 Archetype for building an initial structure of directories and files for Dropwizard web services. Contains a simple web service (available at http://localhost:8082/hello-world) with sources - to simplify development.
   </description>
@@ -41,7 +41,7 @@ Archetype for building an initial structure of directories and files for Dropwiz
       <extension>
         <groupId>org.apache.maven.archetype</groupId>
         <artifactId>archetype-packaging</artifactId>
-        <version>2.2</version>
+        <version>2.3</version>
       </extension>
     </extensions>
 
@@ -49,13 +49,13 @@ Archetype for building an initial structure of directories and files for Dropwiz
       <plugins>
         <plugin>
           <artifactId>maven-archetype-plugin</artifactId>
-          <version>2.2</version>
+          <version>2.3</version>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
     <properties>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 </project>
